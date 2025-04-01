@@ -19,23 +19,24 @@
   <meta name="author" content="xiwahub">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这是我的第一篇博客。">
+    <meta name="description" content="使用命令配置java环境变量永久生效与脚本切换jdk版本新建用户环境变量永久生效 12345setx JAVA8_HOME &quot;D:\Java\jdk8&quot;setx JAVA17_HOME &quot;d:\Java\jdk-17&quot;setx JAVA_HOME %JAVA8_HOME%setx CLASSPATH &quot;.;%JAVA_HOME%\lib\dt.ja">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客">
-<meta property="og:url" content="http://example.com/2025/04/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="java环境变量">
+<meta property="og:url" content="http://example.com/2025/04/01/java%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/index.html">
 <meta property="og:site_name" content="西洼博客">
-<meta property="og:description" content="这是我的第一篇博客。">
+<meta property="og:description" content="使用命令配置java环境变量永久生效与脚本切换jdk版本新建用户环境变量永久生效 12345setx JAVA8_HOME &quot;D:\Java\jdk8&quot;setx JAVA17_HOME &quot;d:\Java\jdk-17&quot;setx JAVA_HOME %JAVA8_HOME%setx CLASSPATH &quot;.;%JAVA_HOME%\lib\dt.ja">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/img/202503301823311.png">
-<meta property="article:published_time" content="2025-04-01T03:34:04.000Z">
-<meta property="article:modified_time" content="2025-04-01T03:35:33.604Z">
+<meta property="og:image" content="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/blog-images/2025/04/01/12-37-47-4ab25e4766ec36d73119f313c244003c.png">
+<meta property="og:image" content="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/blog-images/2025/04/01/12-37-47-5f83c87e045b269aefb35c68c067ea43.png">
+<meta property="article:published_time" content="2025-04-01T04:40:00.000Z">
+<meta property="article:modified_time" content="2025-04-01T04:40:55.505Z">
 <meta property="article:author" content="xiwahub">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/img/202503301823311.png">
+<meta name="twitter:image" content="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/blog-images/2025/04/01/12-37-47-4ab25e4766ec36d73119f313c244003c.png">
   
   
   
-  <title>我的第一篇博客 - 西洼博客</title>
+  <title>java环境变量 - 西洼博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="我的第一篇博客"></span>
+            <span id="subtitle" data-typed-text="java环境变量"></span>
           
         </div>
 
@@ -212,8 +213,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-04-01 11:34" pubdate>
-          2025年4月1日 中午
+        <time datetime="2025-04-01 12:40" pubdate>
+          2025年4月1日 下午
         </time>
       </span>
     
@@ -224,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          9 字
+          372 字
         
       </span>
     
@@ -235,7 +236,7 @@
         
         
         
-          1 分钟
+          4 分钟
         
       </span>
     
@@ -272,19 +273,52 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">我的第一篇博客</h1>
+            <h1 id="seo-header">java环境变量</h1>
             
             
               <div class="markdown-body">
                 
-                <p>这是我的第一篇博客。<br><img src="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/img/202503301823311.png" srcset="/img/loading.gif" lazyload></p>
+                <h1 id="使用命令配置java环境变量永久生效与脚本切换jdk版本"><a href="#使用命令配置java环境变量永久生效与脚本切换jdk版本" class="headerlink" title="使用命令配置java环境变量永久生效与脚本切换jdk版本"></a>使用命令配置java环境变量永久生效与脚本切换jdk版本</h1><p>新建用户环境变量永久生效</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs nix">setx JAVA8_HOME <span class="hljs-string">&quot;D:<span class="hljs-char escape_">\J</span>ava<span class="hljs-char escape_">\j</span>dk8&quot;</span><br>setx JAVA17_HOME <span class="hljs-string">&quot;d:<span class="hljs-char escape_">\J</span>ava<span class="hljs-char escape_">\j</span>dk-17&quot;</span><br>setx JAVA_HOME %JAVA8_HOME%<br>setx CLASSPATH <span class="hljs-string">&quot;.;%JAVA_HOME%<span class="hljs-char escape_">\l</span>ib<span class="hljs-char escape_">\d</span>t.jar;%JAVA_HOME%<span class="hljs-char escape_">\l</span>ib<span class="hljs-char escape_">\t</span>ools.jar;&quot;</span><br>setx PATH <span class="hljs-string">&quot;%PATH%;%JAVA_HOME%<span class="hljs-char escape_">\b</span>in;%JAVA_HOME%<span class="hljs-char escape_">\j</span>re<span class="hljs-char escape_">\b</span>in&quot;</span><br></code></pre></td></tr></table></figure>
 
+<p>新建系统环境变量变量永久生效</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs cmd">setx /m JAVA8_HOME &quot;D:\Java\jdk8&quot;<br>setx /m JAVA17_HOME &quot;d:\Java\jdk-<span class="hljs-number">17</span>&quot;<br>setx /m JAVA_HOME <span class="hljs-variable">%JAVA8_HOME%</span><br>setx /m CLASSPATH &quot;.;<span class="hljs-variable">%JAVA_HOME%</span>\lib\dt.jar;<span class="hljs-variable">%JAVA_HOME%</span>\lib\tools.jar;&quot;<br>setx /m <span class="hljs-built_in">PATH</span> &quot;<span class="hljs-variable">%PATH%</span>;<span class="hljs-variable">%JAVA_HOME%</span>\bin;<span class="hljs-variable">%JAVA_HOME%</span>\jre\bin&quot;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>后续使用bat脚本切换</p>
+<p>switchJdk.bat</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs bat">@<span class="hljs-built_in">echo</span> off<br><span class="hljs-built_in">setlocal</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">REM 提示用户选择 JDK 版本</span><br><span class="hljs-built_in">echo</span>.<br><span class="hljs-built_in">echo</span> 请选择您要切换到的 JDK 版本：<br><span class="hljs-built_in">echo</span>.<br><span class="hljs-built_in">echo</span> 当前用户环境变量 JAVA_HOME <br>reg query &quot;HKEY_CURRENT_USER\Environment&quot; /v JAVA_HOME<br><span class="hljs-built_in">echo</span> 系统环境变量 JAVA_HOME <br>reg query &quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment&quot; /v JAVA_HOME<br><span class="hljs-built_in">echo</span> <span class="hljs-number">11</span>. JDK <span class="hljs-number">8</span> 作用域用户环境变量<br><span class="hljs-built_in">echo</span> <span class="hljs-number">12</span>. JDK <span class="hljs-number">8</span> 作用域系统环境变量<br><span class="hljs-built_in">echo</span> <span class="hljs-number">21</span>. JDK <span class="hljs-number">17</span> 作用域用户环境变量<br><span class="hljs-built_in">echo</span> <span class="hljs-number">22</span>. JDK <span class="hljs-number">17</span> 作用域系统环境变量<br><span class="hljs-built_in">set</span> /p CHOICE=&quot;输入选项（<span class="hljs-number">1</span> 或 <span class="hljs-number">2</span>）: &quot;<br><span class="hljs-comment"></span><br><span class="hljs-comment">REM 根据用户选择设置 JAVA_HOME</span><br><span class="hljs-keyword">if</span> &quot;<span class="hljs-variable">%CHOICE%</span>&quot;==&quot;<span class="hljs-number">11</span>&quot; (<br>    setx  JAVA_HOME &quot;<span class="hljs-variable">%JAVA8_HOME%</span>&quot;<br>    <span class="hljs-built_in">echo</span> JAVA_HOME 已设置为<br>    reg query &quot;HKEY_CURRENT_USER\Environment&quot; /v JAVA_HOME<br>)<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> &quot;<span class="hljs-variable">%CHOICE%</span>&quot;==&quot;<span class="hljs-number">12</span>&quot; (<br>    setx /m JAVA_HOME &quot;<span class="hljs-variable">%JAVA8_HOME%</span>&quot;<br>    <span class="hljs-built_in">echo</span> JAVA_HOME 已设置为<br>    reg query &quot;HKEY_CURRENT_USER\Environment&quot; /v JAVA_HOME<br>)  <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> &quot;<span class="hljs-variable">%CHOICE%</span>&quot;==&quot;<span class="hljs-number">21</span>&quot; (<br>    setx  JAVA_HOME &quot;<span class="hljs-variable">%JAVA17_HOME%</span>&quot;<br>    <span class="hljs-built_in">echo</span> JAVA_HOME 已设置为<br>    reg query &quot;HKEY_CURRENT_USER\Environment&quot; /v JAVA_HOME<br>) <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> &quot;<span class="hljs-variable">%CHOICE%</span>&quot;==&quot;<span class="hljs-number">22</span>&quot; (<br>    setx /m JAVA_HOME &quot;<span class="hljs-variable">%JAVA17_HOME%</span>&quot;<br>    <span class="hljs-built_in">echo</span> JAVA_HOME 已设置为<br>    reg query &quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment&quot; /v JAVA_HOME<br>) <span class="hljs-keyword">else</span> (<br>    <span class="hljs-built_in">echo</span> 无效的选项。<br>)<br><br><span class="hljs-built_in">endlocal</span><br><span class="hljs-built_in">echo</span>.<br><span class="hljs-built_in">echo</span> 请注意：系统环境变量的更改需要新的命令提示符会话或系统重启才能生效。<br><span class="hljs-built_in">pause</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/blog-images/2025/04/01/12-37-47-4ab25e4766ec36d73119f313c244003c.png" srcset="/img/loading.gif" lazyload alt="image-20250104175608208"></p>
+<img src="https://xiwa-cloud-images.oss-cn-shenzhen.aliyuncs.com/blog-images/2025/04/01/12-37-47-5f83c87e045b269aefb35c68c067ea43.png" srcset="/img/loading.gif" lazyload alt="image-20250104175238522" style="zoom:80%; margin:0" />
                 
               </div>
             
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/java/" class="category-chain-item">java</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
@@ -295,8 +329,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>我的第一篇博客</div>
-      <div>http://example.com/2025/04/01/我的第一篇博客/</div>
+      <div>java环境变量</div>
+      <div>http://example.com/2025/04/01/java环境变量/</div>
     </div>
     <div class="license-meta">
       
@@ -340,18 +374,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/01/java%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" title="java环境变量">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">java环境变量</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/04/01/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2025/04/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">
+                        <span class="hidden-mobile">我的第一篇博客</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
