@@ -1,0 +1,11 @@
+User-agent: *
+Allow: / 
+Allow: /archives/ 
+Allow: /tags/ 
+Allow: /categories/ 
+Allow: /about/ 
+Disallow: /js/
+Disallow: /css/ 
+Disallow: /lib/ 
+Sitemap: https://blog.xiwahub.top/baidusitemap.xml
+Sitemap: https://blog.xiwahub.top/sitemap.xml
