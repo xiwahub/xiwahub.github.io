@@ -64,6 +64,7 @@
   
 <link rel="stylesheet" href="/css/cursors.css">
 <link rel="stylesheet" href="/css/scrollbar.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 
 
 
@@ -95,7 +96,9 @@
 
 
 
-  <meta name="google-site-verification" content="1BIVlmk7zm7V8Kt_b315YkZnLA_qSScYtzdUJkqVXtc" />
+  <meta name="google-site-verification" content="1BIVlmk7zm7V8Kt_b315YkZnLA_qSScYtzdUJkqVXtc" />script{% if aplayer.enabled %}  <!-- require APlayer -->  <link rel="stylesheet" href="{{aplayer.cdn.css}}">  <script src="{{aplayer.cdn.js}}"></script>  <!-- require MetingJS -->  <script src="{{aplayer.cdn.meting}}"></script>  <meting-js    server="{{aplayer.server}}"    type="{{aplayer.type}}"    fixed="{{aplayer.fixed}}"    id="{{aplayer.id}}"    auto="{{aplayer.auto}}"    mini="{{aplayer.mini}}"    autoplay="{{aplayer.autoplay}}"    theme="{{aplayer.theme}}"    loop="{{aplayer.loop}}"    order="{{aplayer.order}}"    preload="{{aplayer.preload}}"    volume="{{aplayer.volume}}"    mutex="{{aplayer.mutex}}"    list-folded="{{aplayer.listfolded}}"    list-max-height="{{aplayer.listmaxheight}}"    storage-name="{{aplayer.storagename}}" >  </meting-js>{% endif %}
+
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 
@@ -433,6 +436,11 @@
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script>
 
 
 
