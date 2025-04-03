@@ -76,7 +76,7 @@
 
   <url>
     <loc>https://blog.xiwahub.top/</loc>
-    <lastmod>2025-04-02</lastmod>
+    <lastmod>2025-04-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,14 +84,14 @@
   
   <url>
     <loc>https://blog.xiwahub.top/tags/java/</loc>
-    <lastmod>2025-04-02</lastmod>
+    <lastmod>2025-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiwahub.top/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</loc>
-    <lastmod>2025-04-02</lastmod>
+    <lastmod>2025-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -100,7 +100,7 @@
   
   <url>
     <loc>https://blog.xiwahub.top/categories/java/</loc>
-    <lastmod>2025-04-02</lastmod>
+    <lastmod>2025-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
